@@ -182,7 +182,7 @@ for q in querySamples:
     retrieved_docs = retriever_result["documents"]
     prompt_result=prompt_builder.run(documents=retrieved_docs, question=q)
     llm_result=chat_generator.run(messages=prompt_result["prompt"])
-    print("\nAnswer:",llm_result["results"][0].text)
+    print("\nAnswer:",llm_result["replies"][0].text)
 
 # for p in prompt_result: 
 #     llm_result.append(chat_generator.run(messages=p["prompt"]))
