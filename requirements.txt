@@ -1,0 +1,3 @@
+haystack-ai
+openai>=1.0.0
+pandas
